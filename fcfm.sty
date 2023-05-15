@@ -1,0 +1,24 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fcfm}[2021/09/01 Clase para documentos fcfm]
+
+% [Paquetes]
+% Para crear hipervínculos
+\usepackage{hyperref}
+% Para crear subfiguras
+\usepackage{subcaption}
+% Para fusionar column/row
+\usepackage{multirow}
+% Para crear custom floats
+\usepackage{newfloat}
+
+% [Hipervinculos](hyperref)
+\hypersetup{
+pdfborder={0 0 0} % Recuadro que rodea hipervínculos (000 es invisible)
+}
+
+% [Floating environments](newfloat)
+% Graphic - Declaracion
+\DeclareFloatingEnvironment{graphic}
+% Graphic - Localizacion
+\SetupFloatingEnvironment{graphic}{name=Gráfico}
+\SetupFloatingEnvironment{graphic}{listname={Índice de gráficos}}
